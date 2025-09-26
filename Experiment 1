@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    int x= 22, y=23, z=28;
+    printf("%d", y>x || y>z);
+    return 0;
+    
+}
