@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a = 5, b, c;
+
+    b = ++a;   // pre-increment: a = 6, b = 6
+    printf("After pre-increment: a = %d, b = %d\n", a, b);
+
+    c = a++;   // post-increment: c = 6, a = 7
+    printf("After post-increment: a = %d, c = %d\n", a, c);
+
+    b = --a;   // pre-decrement: a = 6, b = 6
+    printf("After pre-decrement: a = %d, b = %d\n", a, b);
+
+    c = a--;   // post-decrement: c = 6, a = 5
+    printf("After post-decrement: a = %d, c = %d\n", a, c);
+
+    return 0;
+}
