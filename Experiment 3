@@ -1,0 +1,22 @@
+// program to read different types of data using scanf function
+#include<stdio.h> 
+int main(){
+    char ch ;
+    int x;
+    float y;
+    double z;
+    printf("enter the character: ");
+    scanf("%c",&ch);
+    printf("enter the integer: ");
+    scanf("%d",&x);
+    printf("enter the float value:");
+    scanf("%f",&y);
+    printf("enter the double value:");
+    scanf("%lf",&z);
+    printf("ch = %c x = %d y = %f z = %f",ch,x,y,z);
+    return 0 ;
+
+    }
+
+
+    
