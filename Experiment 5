@@ -1,0 +1,22 @@
+//area  and perimeter of circle
+#include<stdio.h>
+int main(){
+    float r,areaofcircle,perimeterofcircle,a, l,b,areasq,arearect;
+
+
+    printf("the value of r is:");
+    scanf("%f",&r);
+    printf("the value of a is:");
+    scanf("%f",&a);
+    printf("the value of l is:");
+    scanf("%f",&l);
+    printf("the value of b is:");
+    scanf("%f",&b);
+    areasq = a*a;
+    arearect = l*b;
+    areaofcircle = 3.14*r*r;
+    perimeterofcircle = 2*3.14*r;
+    printf("areaofcircle = %f \n perimeterofcircle = %f \n areasq =%f \n arearect = %f \n" , areaofcircle, perimeterofcircle,areasq,arearect);
+    return 0;
+
+}
