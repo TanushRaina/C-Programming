@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int x1 = 23 , x2 ; // varriable declaration and also we have intialize the x1 it means Giving a variable its first value at the time of declaration.
+    float y,z;
+    y = 2.3; // we have assigned the value of y as 2.3 means Giving a value to a variable after it has already been declared.
+    char ch;
+  //  printf("value of x1 is  %d\n",x1); 
+   // printf("%f is the value of y ",y);
+    printf("x1 = %d \n z = %f",x1,y);
+    
+    return 0;
+
+
+}
