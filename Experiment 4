@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int x,y,sum; 
+    printf("the value of x is:");
+    scanf("%d",&x);
+    printf("the value of y is:");
+    scanf("%d",&y);
+    sum = x+y;
+    
+
+    printf(" sum = %d \n " ,sum);
+    return 0 ;
+}
