@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int pa;
+    float si,r,t;
+    
+    
+    
+    
+    scanf("%d %f %f",&pa, &r, &t);
+    si = (pa * r * t) / 100;
+    printf("%.2f\n", si);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
