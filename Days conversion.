@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int years,weeks,days,totaldays;
+    scanf("%d", & totaldays);
+    years = (totaldays/365);
+    weeks = (totaldays%365)/7;
+    days = ( totaldays%365)%7;
+    printf("Years: %d\nWeeks: %d\nDays: %d\n",years,weeks,days);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
