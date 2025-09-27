@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float m,cm,km;
+    scanf("%f",&cm);
+    m = cm/100;
+    km = cm/100000;
+    printf("%.2f %.2f\n", m,km);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
