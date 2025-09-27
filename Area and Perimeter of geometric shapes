@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float x,y,a,r;
+    float Ac, Asq, Arect;
+    float peraofcircle, peraofsq, peraofrect;
+    scanf("%f",&r);
+    scanf("%f",&a);
+    scanf("%f%f",&x,&y);
+    Ac = 3.1416*r*r;
+    Asq = a*a;
+    Arect = x*y;
+    peraofcircle = 2*3.1416*r;
+    peraofsq = 4*a;
+    peraofrect = 2*(x+y);
+    printf("Circle: %.2f %.2f\n", Ac,peraofcircle);
+    printf("Square: %.2f %.2f\n", Asq,peraofsq);
+    printf("Rectangle: %.2f %.2f\n",Arect,peraofrect);
+    
+    
+    
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
