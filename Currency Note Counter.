@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int am;
+    int x,y,z,p,q,r,s,t;
+    scanf("%d",&am);
+    x = am/500 ; am = am%500;
+    y = am/100 ; am = am%100;
+    z = am/50 ; am = am%50;
+    p = am/20 ; am = am%20;
+    q = am/10 ; am = am%10;
+    r = am/5 ; am = am%5;
+    s = am/2 ; am = am%2;
+    t = am/1 ; am = am%1;
+    if (x>0) printf("500: %d\n",x);
+    if (y>0) printf("100: %d\n",y);
+    if (z>0) printf("50: %d\n",z);
+    if (p>0) printf("20: %d\n",p);
+    if (q>0) printf("10: %d\n",q);
+    if (r>0) printf("5: %d\n",r);
+    if (s>0) printf("2: %d\n",s);
+    if (t>0) printf("1: %d\n",t);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int am;
+    int x,y,z,p,q,r,s,t;
+    scanf("%d",&am);
+    x = am/500 ; am = am%500;
+    y = am/100 ; am = am%100;
+    z = am/50 ; am = am%50;
+    p = am/20 ; am = am%20;
+    q = am/10 ; am = am%10;
+    r = am/5 ; am = am%5;
+    s = am/2 ; am = am%2;
+    t = am/1 ; am = am%1;
+    if (x>0) printf("500: %d\n",x);
+    if (y>0) printf("100: %d\n",y);
+    if (z>0) printf("50: %d\n",z);
+    if (p>0) printf("20: %d\n",p);
+    if (q>0) printf("10: %d\n",q);
+    if (r>0) printf("5: %d\n",r);
+    if (s>0) printf("2: %d\n",s);
+    if (t>0) printf("1: %d\n",t);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
