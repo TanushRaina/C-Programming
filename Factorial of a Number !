@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n, product = 1;
+    scanf("%d",&n);
+    for(int i = 1; i<=n; i++ ){
+        product*=i;
+    }
+    printf("%d",product);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
