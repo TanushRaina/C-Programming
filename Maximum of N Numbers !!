@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,num,max;
+    scanf("%d",&N);
+    scanf("%d",&num);
+    max = num;
+    for(int i = 2 ; i<=N ; i++){
+        scanf("%d",&num);
+        if(num>max){
+            max = num;
+        }
+        
+    }
+    printf("%d",max);
+        
+        
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
