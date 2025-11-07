@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main(){
+    int n, count =0 ; 
+    scanf("%d",&n);
+    int arr[n];
+    for(int i =0; i<n; i++){
+        scanf("%d",&arr[i]);
+        
+    }
+    for(int i =0; i<n; i++){
+        int alreadycounted =0 ; 
+        for(int j = 0; j<i ; j++){
+            if(arr[j] == arr[i]){
+                alreadycounted = 1; 
+                break; 
+                
+            }
+        }
+        if(alreadycounted){
+            continue; 
+            
+        }
+        int frq =0 ;
+        for(int k = i+1; k<n; k++){
+            if(arr[i] == arr[k]){
+                frq =1; 
+                break;
+            }
+        }
+        if(frq == 1){
+            count ++;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
