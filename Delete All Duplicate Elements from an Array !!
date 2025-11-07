@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n; 
+    scanf("%d",&n);
+    int arr[n];
+    for(int i= 0 ; i<n; i++){
+        
+        scanf("%d",&arr[i]);
+        
+    }
+    int printed = 0 ;
+    for(int i =0; i<n; i++){
+        int alreadycounted =0 ; 
+        for(int j = 0; j<i; j++){
+            if(arr[j] == arr[i]){
+                alreadycounted =1 ;
+                break;
+                
+            }
+        }
+        if(alreadycounted == 0){
+            printf("%d ",arr[i]);
+            printed =1;
+           
+        }
+        if(printed == 0){
+            printf("No elements left");
+            
+        }
+    }
+    return 0;
+    
+}
