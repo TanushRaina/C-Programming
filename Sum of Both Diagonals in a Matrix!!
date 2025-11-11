@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d ",&n);
+    int arr[n][n];
+    for(int i = 0; i<n; i++){
+        for(int j =0 ; j<n ;j++){
+            scanf("%d",&arr[i][j]);
+            
+        }
+    }
+    int istsum = 0;
+    int sum = 0;
+    
+    for(int i = 0; i<n; i++){
+        for(int j =0 ; j<n ;j++){
+           if(i == j){
+               istsum += arr[i][j];
+           }
+            if (i + j == n - 1){
+            sum += arr[i][j];
+                }
+            
+            
+        }
+    }
+    int total = istsum + sum;
+    
+    if(n%2!= 0){
+        total = total - arr[n/2][n/2];
+        
+    }
+    printf("Sum of Primary Diagonal: %d\n",istsum);
+    printf("Sum of Secondary Diagonal: %d\n",sum);
+    
+    printf("Total Sum of Both Diagonals: %d",total);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
