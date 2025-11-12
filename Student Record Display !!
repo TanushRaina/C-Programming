@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main(){
+    
+
+int n; 
+
+scanf("%d",&n);
+
+
+
+char str[100];
+
+
+scanf(" %[^\n]s", str);
+
+
+
+char stri[50];
+
+scanf(" %[^\n]s", stri);
+
+
+
+char d;
+scanf(" %c",&d);
+
+char strin[50];
+
+scanf(" %[^\n]s", strin);
+
+printf("Roll Number: %d\n",n);
+printf("Name: %s\n",str);
+printf("Branch: %s\n",stri);
+printf("Section: %c\n",d);
+printf("College: %s\n",strin);
+
+
+
+
+    return 0; 
+}
+
+    
