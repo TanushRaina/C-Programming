@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+struct lenwid{
+    int l;
+    int w;
+    
+    
+    
+};
+int area(struct lenwid r ){
+    return r.l*r.w;
+}
+int peri(struct lenwid r){
+    return 2*(r.l+r.w);
+}
+
+
+int main() {
+    struct lenwid r;
+    scanf("%d", &r.l);
+    scanf("%d", &r.w);
+    printf("Area: %d\n",area(r));
+    printf("Perimeter: %d",peri(r));
+    
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
