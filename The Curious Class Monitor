@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct info{
+    char name[50];
+    int age;
+    char grade;
+
+
+
+};
+int main(){
+    struct info s1;
+    scanf("%[^\n]%*c",s1.name);
+    scanf("%d ",&s1.age);
+    scanf("%c",&s1.grade);
+    printf("Name: %s\n",s1.name);
+    printf("Age: %d\n",s1.age);
+  
+    printf("Grade: %c\n",s1.grade);
+    return 0;
+
+
+    
+
+
+
+}
