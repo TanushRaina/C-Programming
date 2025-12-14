@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int isarmstrong(int n){
+    int temp = n, t = n; 
+    int rem , sum =0 , count = 0; 
+    while(n != 0){
+        count ++ ;
+        n = n/10;
+        
+    }
+    while( t != 0){
+        rem = t%10;
+        sum = sum + (int)pow(rem, count);
+        t = t/10;
+        
+    }
+    if(sum == temp){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+
+int main() {
+    int flag = 0;
+    int s, e;
+    scanf("%d %d",&s,&e);
+    for(int i = s; i<= e; i++){
+        if(isarmstrong(i)){
+            printf("%d ",i);
+            flag = 1;
+        }
+    }
+    if(!flag){
+        printf("No Armstrong numbers found");
+        
+    }
+    
+
+      
+    return 0;
+}
